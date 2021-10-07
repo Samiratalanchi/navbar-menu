@@ -1,12 +1,26 @@
-
-@keyframes spini {
+#first,#second,#third {
+    height: 5px;
+    margin: 5px 0;
+    background-color: #ece908;
+    border-radius: 5px;
+    content: "";
+    display: block;
+    
+}
+button {
+    height: 40px;
+}
+a:hover {
+    animation: spin 1s linear;
+}
+@keyframes spin {
     0% {
         transform: rotate(0deg);
     }
-    /* 50% {
+    50% {
         transform: rotate(360deg);
-    } */
+    }
     100% {
-        transform: rotate(180deg);
+        transform: rotate(720deg);
     }
 }
